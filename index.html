@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Season DApp - Abdulnasser Al-Shawki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌤️ Season Web3 Application</h1>
+
+        <button onclick="connectWallet()" class="btn-primary">🔗 اتصال بالمحفظة</button>
+        <p id="walletAddress" class="wallet"></p>
+
+        <input type="text" id="season" placeholder="ادخل الفصل الحالي (مثلاً: صيف)" autocomplete="off" maxlength="30">
+
+        <div class="btn-group">
+            <button onclick="getSeason()" class="btn-outline">📖 عرض الفصل</button>
+            <button onclick="setSeason()" class="btn-solid">💾 حفظ الفصل</button>
+        </div>
+
+        <div class="info">
+            <p id="showSeason"></p>
+            <p id="updateCount"></p>
+            <p id="lastUpdatedBy"></p>
+        </div>
+
+        <h3>آخر 5 تحديثات</h3>
+        <ul id="lastFive"></ul>
+
+        <div id="status"></div>
+    </div>
+
+    <footer>
+        © 2026 Abdulnasser Murshid Mohammed Murshid Al-Shawki<br>
+        جميع الحقوق محفوظة
+    </footer>
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.7.2.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
